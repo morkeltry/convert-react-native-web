@@ -6,9 +6,6 @@ if (process.argv[2]==='.')
 const target = process.argv[2] ||  __dirname;
 const packageJson = require(path.join(target,'package.json'));
 
-console.log(target);
-console.log(packageJson);
-
 let { scripts, dependencies, devDependencies } = packageJson;
 
 const throttleBuildUnix = true;
@@ -16,8 +13,6 @@ const HOME = process.env.HOME || '~';
 const ANDROID_HOME = process.env.ANDROID_HOME || `${process.env.HOME}/Android`;
 const device = 'Android-9-Pixel-XL.avd'
 
-console.log(packageJson);
-console.log(HOME, ANDROID_HOME);
 
 scripts.web = scripts.start;
 scripts.start = throttleBuildUnix ? 'nice -n2 react-native start' : 'react-native start';
@@ -50,7 +45,6 @@ packageJson.devDependencies= Object.assign( {
     'react-test-renderer': '~16.9.0',
     'babel-preset-expo': '~8.0.0'
   }, devDependencies );
-console.log(packageJson);
 
 if (packageJson.private === undefined)
   packageJson.private = true;
