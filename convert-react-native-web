@@ -2,4 +2,5 @@ mv $1/index.js $1/index.js.webonly
 cp index.js $1
 cp app.json $1
 cp babel.config.js $1
+cp -r android $1
 node convert-react-native-web.js $1
