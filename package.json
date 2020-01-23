@@ -1,53 +1,14 @@
 {
-  "name": "matryoshka",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@react-navigation/web": "^1.0.0-alpha.9",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-native": "^0.61.5",
-    "react-native-gesture-handler": "~1.5.0",
-    "react-native-reanimated": "~1.4.0",
-    "react-native-screens": "~2.0.0-alpha.12",
-    "react-native-unimodules": "~0.7.0",
-    "react-native-web": "^0.11.7",
-    "react-scripts": "3.3.0"
-  },
+  "name": "convert-react-native-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convert-react-native-web.js",
   "scripts": {
-    "start": "nice -n2 react-native start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "web": "nice -n2 react-native start",
-    "android": "nice -n2 react-native run-ios",
-    "postinstall": "jetify",
-    "shake": "adb shell input keyevent 82",
-    "killemu": "killall -9 /home/teide/Android/emulator/qemu/linux-x86_64/qemu-system-x86_64",
-    "clearemu": "rm /home/teide/Android/avd/Android-9-Pixel-XL.avd/userdata-qemu.img.qcow2 "
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "babel-jest": "~24.9.0",
-    "babel-preset-expo": "~8.0.0",
-    "jest": "~24.9.0",
-    "jetifier": "~1.6.4",
-    "metro-react-native-babel-preset": "~0.56.0",
-    "react-test-renderer": "~16.9.0"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "write-pkg": "^4.0.0"
   }
 }

@@ -22,7 +22,7 @@ console.log(HOME, ANDROID_HOME);
 scripts.web = scripts.start;
 scripts.start = throttleBuildUnix ? 'nice -n2 react-native start' : 'react-native start';
 scripts.android = throttleBuildUnix ? 'nice -n2 react-native run-android' : 'react-native run-android';
-scripts.android = throttleBuildUnix ? 'nice -n2 react-native run-ios' : 'react-native run-ios';
+scripts.ios = throttleBuildUnix ? 'nice -n2 react-native run-ios' : 'react-native run-ios';
 scripts.postinstall = 'jetify';
 scripts.shake ='adb shell input keyevent 82';
 scripts.killemu = `killall -9 ${path.join(ANDROID_HOME,'emulator/qemu/linux-x86_64/qemu-system-x86_64')}`;
