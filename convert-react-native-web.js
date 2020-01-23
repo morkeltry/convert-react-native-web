@@ -8,7 +8,7 @@ const packageJson = require(path.join(target,'package.json'));
 
 let { scripts, dependencies, devDependencies } = packageJson;
 
-const throttleBuildUnix = true;
+const throttleBuildUnix = false;
 const HOME = process.env.HOME || '~';
 const ANDROID_HOME = process.env.ANDROID_HOME || `${process.env.HOME}/Android`;
 const device = 'Android-9-Pixel-XL.avd'
